@@ -1,0 +1,85 @@
+
+.my-center-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+nav i.my-menu-size {
+    font-size: 3rem;
+}
+
+.tabs .tab a:hover {
+    background-color:rgba(14, 13, 13, 0.241);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: rgba(14, 13, 13, 0.148);
+}
+
+ .my-card {
+    padding-top: 30px;
+ }
+
+  /* label focus color */
+  .input-field input:focus + label {
+    color: #000 !important;
+  }
+  /* label underline focus color */
+  .input-field input:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* valid color */
+  .input-field input.valid {
+    border-bottom: 1px #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* invalid color */
+  .input-field input.invalid {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000 !important;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+ul.dropdown-content.select-dropdown li:not(.disabled) span {
+    color: #000;
+}
+
+#myBtn {
+    background-color:#bdbdbd;
+}
+
+#myBtn:hover {
+    background-color:rgba(14, 13, 13, 0.555);
+}
+
+.checkbox-black[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: none;
+    background-color: rgba(14, 13, 13, 0.241);
+  }
+
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
