@@ -1,0 +1,114 @@
+$tablets: 768px;
+
+$primaryColor : #FE4A49;
+$primaryHoverColor : hwb(0 29% 10%);
+$primaryActiveColor : hwb(0 29% 20%);
+$textColor : black;
+
+* {
+    font-family: 'Roboto',georgia,garamond,serif;
+    font-weight: bold;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $primaryColor;
+    .logo-header-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo-header {
+        height: 250px;
+        width: 250px;
+    }
+    .nav-list-div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-list {
+        font-size: 1.8rem;
+        list-style-type: none;
+        padding-left: 0px;
+        text-align: center;
+        @media (min-width: $tablets) {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .nav-link {
+        display: block;
+        color: $textColor;
+        text-decoration: none;
+        &:hover {
+            background-color: $primaryHoverColor;
+        }
+        &:active {
+            background-color: $primaryActiveColor;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $primaryColor;
+
+    .footer-logo-copy-div {
+        padding-left: 10px;
+    }
+
+    .logo-footer-div {
+
+    }
+
+    .logo-footer {
+        height: 100px;
+        width: 100px;
+    }
+    .footer-nav-list-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-nav-list {
+        font-size: 1rem;
+        list-style-type: none;
+        padding-left: 0px;
+        padding-right: 15px;
+        .nav-link {
+            display: block;
+            color: $textColor;
+            text-decoration: none;
+            &:hover {
+                background-color: $primaryHoverColor;
+            }
+            &:active {
+                background-color: $primaryActiveColor;
+            }
+        }
+    }
+
+}
+
+
