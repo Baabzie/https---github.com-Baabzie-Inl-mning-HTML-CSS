@@ -1,4 +1,8 @@
+$bigDesktop: 2350px;
+$desktop: 1300px;
 $tablets: 813px;
+$bigPhone: 595px;
+$normalPhone: 350px;
 
 $bodyColor : #F4F4F8;
 $mainColor : #E6E6EA;
@@ -19,6 +23,13 @@ $textColor : black;
     justify-content: center;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     background-color: $bodyColor;
     z-index: -2;
@@ -31,6 +42,7 @@ body {
 }
 
 header {
+    z-index: 1;
     width: 100%;
     box-shadow: 0px 2px $shadowColor;
     font-weight: bold;
@@ -91,7 +103,41 @@ header {
 }
 
 main {
-    z-index: -1;
+    h1, h2 {
+        font-size: 1.3rem;
+        @media (min-width: $normalPhone) {
+            font-size: 1.7rem;
+        }
+        @media (min-width: $tablets) {
+            font-size: 2rem;
+        }
+        @media (min-width: $desktop) {
+            font-size: 2.8rem;
+        }
+        @media (min-width: $bigDesktop) {
+            font-size: 3.5rem;
+        }
+        
+    }
+
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    address {
+        margin: 0;
+    }
+
+    address p {
+        margin: 0;
+        font-size: 1.1rem;
+        @media (min-width: $desktop) {
+            font-size: 1.5rem;
+        }
+    }
+
+
     background-color: $mainColor;
     box-shadow: 1px 1px 5px $shadowColor;
     width: 100%;
@@ -108,8 +154,12 @@ main {
     .paragraph-div {
         margin: 16px;
         text-align: center;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 1.2rem;
+        @media (min-width: $tablets) {
+            width: 800px;
+        }
+        @media (min-width: $bigDesktop) {
+            width: 1200px;
+        }
     }
     
     .CTA-div {
@@ -140,14 +190,112 @@ main {
     }
 
     .CTA-picture {
-        width: 300px;
+        width: 250px;
+
+        @media (min-width: $bigPhone) {
+            width: 500px;
+        }
+
         @media (min-width: $tablets) {
             width: 600px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 800px;
+        }
+
+        
+    }
+
+    .pair {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $bigPhone) {
+            flex-direction: row;
+        }
+        @media (min-width: $desktop) {
+            flex-direction: column;
+        }
+        @media (min-width: $bigDesktop) {
+            flex-direction: row;
+        }
+
+    }
+    
+    .profile-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $textColor;
+        h3 {
+            color: $textColor;
+            font-size: 1.2rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 2rem;
+                width: 400px;
+            }
+        }
+        h4 {
+            color: $textColor;
+            margin: 0;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 1.1rem;
+                width: 400px;
+            }
+        }
+        &:hover {
+            background-color: $secondaryHoverColor;
+        }
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+        @media (min-width: $desktop) {
+            flex-direction: row;
+        }
+    }
+
+    .row-reversed {
+        @media (min-width: $desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .profile-picture {
+        width: 250px;
+        @media (min-width: $desktop) {
+            width: 350px;
+        }
+    }
+
+    .profile-paragraph-div {
+        margin: 16px 0;
+        text-align: center;
+        font-size: 1rem;
+        
+        p {
+            padding: 0 10px 0 10px;
+            width: 230px;
+            @media (min-width: $desktop) {
+                padding: 0;
+                margin: 0 40px 0 40px;
+                width: 350px;
+            }
         }
     }
 }
 
 footer {
+    z-index: 1;
     box-shadow: 0px -2px $shadowColor;
     font-weight: bold;
     position: relative;
@@ -172,10 +320,6 @@ footer {
             align-items: flex-end;
             margin-right: 300px;
         }
-    }
-
-    .logo-footer-div {
-
     }
 
     .logo-footer {
@@ -203,10 +347,10 @@ footer {
                 background-color: $primaryActiveColor;
             }
         }
-    @media (min-width: $tablets){
-        text-align: right;
-        font-size: 1rem;
-    }
+        @media (min-width: $tablets){
+            text-align: right;
+            font-size: 1rem;
+        }
     }
 
 }
