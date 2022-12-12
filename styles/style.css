@@ -10,7 +10,7 @@
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -270,11 +270,6 @@ main .profile-div:hover {
     flex-direction: row;
   }
 }
-@media (min-width: 1300px) {
-  main .row-reversed {
-    flex-direction: row-reverse;
-  }
-}
 main .profile-picture {
   width: 250px;
 }
@@ -292,11 +287,344 @@ main .profile-paragraph-div p {
   padding: 0 10px 0 10px;
   width: 230px;
 }
+@media (min-width: 595px) {
+  main .profile-paragraph-div p {
+    height: 216px;
+  }
+}
+@media (min-width: 1300px) {
+  main .profile-paragraph-div p {
+    height: 144px;
+  }
+}
 @media (min-width: 1300px) {
   main .profile-paragraph-div p {
     padding: 0;
     margin: 0 40px 0 40px;
     width: 350px;
+  }
+}
+@media (min-width: 595px) {
+  main .profile-paragraph-div address p {
+    height: auto;
+  }
+}
+@media (min-width: 1300px) {
+  main .profile-paragraph-div address p {
+    height: auto;
+  }
+}
+main .features-div {
+  margin: 16px 0 64px 0;
+  box-shadow: 10px 10px 5px hwb(240 90% 100%);
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 350px) {
+  main .features-div {
+    margin: 16px 24px 64px 24px;
+  }
+}
+@media (min-width: 813px) {
+  main .features-div {
+    flex-direction: row;
+  }
+}
+main .features-picture {
+  width: 250px;
+}
+@media (min-width: 595px) {
+  main .features-picture {
+    width: 350px;
+  }
+}
+@media (min-width: 813px) {
+  main .features-picture {
+    width: 250px;
+  }
+}
+@media (min-width: 2350px) {
+  main .features-picture {
+    width: 350px;
+  }
+}
+main .product-div {
+  margin: 16px 0 64px 0;
+  box-shadow: 10px 10px 5px hwb(240 90% 100%);
+  border-radius: 1%;
+  background-color: hwb(240 90% 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+main .product-div h2 {
+  color: black;
+  font-size: 1.2rem;
+  width: 250px;
+  margin-bottom: 5px;
+}
+@media (min-width: 1300px) {
+  main .product-div h2 {
+    font-size: 2rem;
+    width: 400px;
+  }
+}
+main .product-div h3 {
+  color: black;
+  margin: 0;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 5px;
+}
+@media (min-width: 1300px) {
+  main .product-div h3 {
+    font-size: 1.1rem;
+    width: 400px;
+  }
+}
+@media (min-width: 350px) {
+  main .product-div {
+    margin: 16px 24px 64px 24px;
+  }
+}
+@media (min-width: 1300px) {
+  main .product-div {
+    flex-direction: row;
+  }
+}
+main .product-picture {
+  width: 250px;
+}
+@media (min-width: 1300px) {
+  main .product-picture {
+    width: 350px;
+  }
+}
+main .product-paragraph-div {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+main .product-paragraph-div p {
+  padding: 0 10px 0 10px;
+  width: 230px;
+}
+@media (min-width: 595px) {
+  main .product-paragraph-div p {
+    height: 216px;
+  }
+}
+@media (min-width: 1300px) {
+  main .product-paragraph-div p {
+    height: 144px;
+  }
+}
+@media (min-width: 1300px) {
+  main .product-paragraph-div p {
+    padding: 0;
+    margin: 0 40px 0 40px;
+    width: 350px;
+  }
+}
+main .product-paragraph-div button {
+  background-color: #009FB7;
+  border: none;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px hwb(240 90% 100%);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+main .product-paragraph-div button:hover {
+  background-color: hwb(188 0% 40%);
+}
+main .review-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .review-layout {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1300px) {
+  main .review-layout {
+    flex-direction: row;
+  }
+}
+main .review-div {
+  margin: 16px 0 64px 0;
+  box-shadow: 10px 10px 5px hwb(240 90% 100%);
+  border-radius: 1%;
+  background-color: hwb(240 90% 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+main .review-div h2 {
+  color: black;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 5px;
+}
+main .review-div h3 {
+  color: black;
+  margin: 0;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 5px;
+}
+@media (min-width: 350px) {
+  main .review-div {
+    margin: 16px 24px 64px 24px;
+  }
+}
+main .review-paragraph-div {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+main .review-paragraph-div p {
+  padding: 0 10px 0 10px;
+  width: 230px;
+}
+@media (min-width: 595px) {
+  main .review-paragraph-div p {
+    width: 400px;
+  }
+}
+@media (min-width: 1300px) {
+  main .review-paragraph-div p {
+    padding: 0;
+    margin: 0 40px 0 40px;
+    width: 230px;
+  }
+}
+main .contact-div {
+  margin: 16px 0 64px 0;
+  box-shadow: 10px 10px 5px hwb(240 90% 100%);
+  border-radius: 1%;
+  background-color: hwb(240 90% 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+main .contact-div h2 {
+  color: black;
+  font-size: 1.2rem;
+  width: 250px;
+  margin-bottom: 5px;
+}
+@media (min-width: 1300px) {
+  main .contact-div h2 {
+    font-size: 2rem;
+    width: 400px;
+  }
+}
+@media (min-width: 350px) {
+  main .contact-div {
+    margin: 16px 24px 64px 24px;
+  }
+}
+main .contact-div form {
+  width: 250px;
+}
+@media (min-width: 595px) {
+  main .contact-div form {
+    width: 550px;
+  }
+}
+main .contact-div textarea {
+  width: 200px;
+}
+@media (min-width: 595px) {
+  main .contact-div textarea {
+    width: 500px;
+  }
+}
+main .contact-div input, main .contact-div select, main .contact-div textarea {
+  background-color: #F4F4F8;
+  border-radius: 1%;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+main .contact-div input, main .contact-div select {
+  text-align: center;
+  height: 25px;
+}
+@media (min-width: 595px) {
+  main .contact-div input, main .contact-div select {
+    font-size: 1.2rem;
+  }
+}
+main .office-div {
+  margin: 16px 0 64px 0;
+  box-shadow: 10px 10px 5px hwb(240 90% 100%);
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 350px) {
+  main .office-div {
+    margin: 16px 24px 64px 24px;
+  }
+}
+@media (min-width: 813px) {
+  main .office-div {
+    flex-direction: row;
+  }
+}
+main .office-picture {
+  width: 250px;
+}
+@media (min-width: 595px) {
+  main .office-picture {
+    width: 500px;
+  }
+}
+@media (min-width: 813px) {
+  main .office-picture {
+    width: 600px;
+  }
+}
+main .contact-paragraph-div {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+main .contact-paragraph-div button {
+  background-color: #009FB7;
+  border: none;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px hwb(240 90% 100%);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+main .contact-paragraph-div button:hover {
+  background-color: hwb(188 0% 40%);
+}
+@media (min-width: 1300px) {
+  main .row-reversed {
+    flex-direction: row-reverse;
   }
 }
 

@@ -11,6 +11,8 @@ $primaryHoverColor : hwb(0 29% 10%);
 $primaryActiveColor : hwb(0 29% 20%);
 $secondaryColor: hwb(240 90% 20%);
 $secondaryHoverColor: hwb(240 90% 50%);
+$buttonColor: #009FB7;
+$buttonHoverColor: hwb(188 0% 40%);
 $shadowColor: hwb(240 90% 100%);
 $textColor : black;
 
@@ -26,7 +28,7 @@ $textColor : black;
 .column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -207,6 +209,7 @@ main {
         
     }
 
+
     .pair {
         display: flex;
         flex-direction: column;
@@ -264,19 +267,14 @@ main {
         }
     }
 
-    .row-reversed {
-        @media (min-width: $desktop) {
-            flex-direction: row-reverse;
-        }
-    }
-
+    
     .profile-picture {
         width: 250px;
         @media (min-width: $desktop) {
             width: 350px;
         }
     }
-
+    
     .profile-paragraph-div {
         margin: 16px 0;
         text-align: center;
@@ -285,11 +283,315 @@ main {
         p {
             padding: 0 10px 0 10px;
             width: 230px;
+            @media (min-width: $bigPhone) {
+                height: 216px;
+            }
+            @media (min-width: $desktop) {
+                height: 144px;
+            }
             @media (min-width: $desktop) {
                 padding: 0;
                 margin: 0 40px 0 40px;
                 width: 350px;
             }
+        }
+        
+        address p {
+            @media (min-width: $bigPhone) {
+                height: auto;
+            }
+            @media (min-width: $desktop) {
+                height: auto;
+            }
+        }
+    }
+    
+    .features-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+        @media (min-width: $tablets) {
+            flex-direction: row;
+        }
+    }
+    
+    .features-picture {
+        width: 250px;
+        @media (min-width: $bigPhone) {
+            width: 350px;
+        }
+        @media (min-width: $tablets) {
+            width: 250px;
+        }
+        @media (min-width: $bigDesktop) {
+            width: 350px;
+        }
+    }
+    
+    .product-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $textColor;
+        h2 {
+            color: $textColor;
+            font-size: 1.2rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 2rem;
+                width: 400px;
+            }
+        }
+        h3 {
+            color: $textColor;
+            margin: 0;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 1.1rem;
+                width: 400px;
+            }
+        }
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+        @media (min-width: $desktop) {
+            flex-direction: row;
+        }
+    }
+    
+    .product-picture {
+        width: 250px;
+        @media (min-width: $desktop) {
+            width: 350px;
+        }
+    }
+
+    .product-paragraph-div {
+        margin: 16px 0;
+        text-align: center;
+        font-size: 1rem;
+        
+        p {
+            padding: 0 10px 0 10px;
+            width: 230px;
+            @media (min-width: $bigPhone) {
+                height: 216px;
+            }
+            @media (min-width: $desktop) {
+                height: 144px;
+            }
+            @media (min-width: $desktop) {
+                padding: 0;
+                margin: 0 40px 0 40px;
+                width: 350px;
+            }
+        }
+        button {
+            background-color: $buttonColor;
+            border: none;
+            border-radius: 1%;
+            box-shadow: 5px 5px 5px $shadowColor;
+            color: $textColor;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            &:hover {
+                background-color: $buttonHoverColor;
+            }
+        }
+    }
+
+    .review-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .review-layout {
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width: $desktop) {
+            flex-direction: row;
+        }
+
+    }
+    
+    .review-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $textColor;
+        h2 {
+            color: $textColor;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 5px;
+        }
+        h3 {
+            color: $textColor;
+            margin: 0;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 5px;
+        }
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+
+    }
+
+    .review-paragraph-div {
+        margin: 16px 0;
+        text-align: center;
+        font-size: 1rem;
+        
+        p {
+            padding: 0 10px 0 10px;
+            width: 230px;
+            @media (min-width: $bigPhone) {
+                width: 400px;
+            }
+            @media (min-width: $desktop) {
+                padding: 0;
+                margin: 0 40px 0 40px;
+                width: 230px;
+            }
+        }
+    }
+
+    .contact-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $textColor;
+        h2 {
+            color: $textColor;
+            font-size: 1.2rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 2rem;
+                width: 400px;
+            }
+        }
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+        
+
+        form {
+            width: 250px;
+            @media (min-width: $bigPhone) {
+                width: 550px;
+            }
+        }
+        textarea {
+            width: 200px;
+            @media (min-width: $bigPhone) {
+                width: 500px;
+            }
+        }
+
+        input, select, textarea {
+            background-color: $bodyColor;
+            border-radius: 1%;
+            border: none;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        input, select {
+            text-align: center;
+            height: 25px;
+            @media (min-width: $bigPhone) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .office-div {
+        margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        @media (min-width: $normalPhone) {
+            margin: 16px 24px 64px 24px;
+        }
+        @media (min-width: $tablets) {
+            flex-direction: row;
+        }
+    }
+
+    .office-picture {
+        width: 250px;
+        @media (min-width: $bigPhone) {
+            width: 500px;
+        }
+        @media (min-width: $tablets) {
+            width: 600px;
+        }
+    }
+
+    .contact-paragraph-div {
+        margin: 16px 0;
+        text-align: center;
+        font-size: 1rem;
+    
+        button {
+            background-color: $buttonColor;
+            border: none;
+            border-radius: 1%;
+            box-shadow: 5px 5px 5px $shadowColor;
+            color: $textColor;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            &:hover {
+                background-color: $buttonHoverColor;
+            }
+        }
+    }
+
+
+    .row-reversed {
+        @media (min-width: $desktop) {
+            flex-direction: row-reverse;
         }
     }
 }
@@ -310,7 +612,7 @@ footer {
         flex-direction: row;
         justify-content: center;
     }
-
+    
     .footer-logo-copy-div {
         padding-left: 10px;
         @media (min-width: $tablets) {
@@ -321,7 +623,7 @@ footer {
             margin-right: 300px;
         }
     }
-
+    
     .logo-footer {
         height: 100px;
         width: 100px;
@@ -330,7 +632,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-
+    
     .footer-nav-list {
         font-size: 1.2rem;
         list-style-type: none;
@@ -352,7 +654,7 @@ footer {
             font-size: 1rem;
         }
     }
-
+    
 }
 
 

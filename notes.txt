@@ -1,3 +1,4 @@
 h-taggar (gå igenom)
-en till anställd
-roller i företaget
+produkter ska ha pris
+bilder för funktioner i produkter
+i referenser kanske inte betygen ska vara h3 samt lägg till namn på kund
