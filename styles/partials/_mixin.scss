@@ -1,0 +1,38 @@
+@mixin flexColumn($justifyContent) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyContent;
+    align-items: center;
+}
+
+@mixin standardCard {
+    margin: 16px 0 64px 0;
+        box-shadow: 10px 10px 5px $shadowColor;
+        border-radius: 1%;
+        background-color: $secondaryColor;
+        @include flexColumn(center);
+        color: $textColor;
+}
+
+@mixin standardCardHeaderOne {
+    color: $textColor;
+            font-size: 1.2rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 2rem;
+                width: 400px;
+            }
+}
+
+@mixin standardCardHeaderTwo {
+    color: $textColor;
+            margin: 0;
+            font-size: 1rem;
+            width: 250px;
+            margin-bottom: 5px;
+            @media (min-width: $desktop) {
+                font-size: 1.1rem;
+                width: 400px;
+            }
+}

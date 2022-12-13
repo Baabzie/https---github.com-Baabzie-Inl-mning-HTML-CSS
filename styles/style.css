@@ -20,6 +20,81 @@ body {
   align-items: center;
 }
 
+h1, h2 {
+  font-size: 1.3rem;
+}
+@media (min-width: 350px) {
+  h1, h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 813px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1300px) {
+  h1, h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 2350px) {
+  h1, h2 {
+    font-size: 3.5rem;
+  }
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #009FB7;
+  border: none;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px hwb(240 90% 100%);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover {
+  background-color: hwb(188 0% 40%);
+}
+
+address {
+  margin: 0;
+}
+address p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+@media (min-width: 1300px) {
+  address p {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  background-color: #E6E6EA;
+  box-shadow: 1px 1px 5px hwb(240 90% 100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 813px) {
+  main {
+    width: 70%;
+    min-width: 800px;
+    flex-grow: 1;
+  }
+}
+
 header {
   z-index: 1;
   width: 100%;
@@ -81,81 +156,6 @@ header .nav-link:hover {
 header .active {
   background-color: hwb(0 29% 20%);
   border-radius: 1%;
-}
-
-main {
-  background-color: #E6E6EA;
-  box-shadow: 1px 1px 5px hwb(240 90% 100%);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media (min-width: 813px) {
-  main {
-    width: 70%;
-    min-width: 800px;
-    flex-grow: 1;
-  }
-}
-
-h1, h2 {
-  font-size: 1.3rem;
-}
-@media (min-width: 350px) {
-  h1, h2 {
-    font-size: 1.7rem;
-  }
-}
-@media (min-width: 813px) {
-  h1, h2 {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1300px) {
-  h1, h2 {
-    font-size: 2.8rem;
-  }
-}
-@media (min-width: 2350px) {
-  h1, h2 {
-    font-size: 3.5rem;
-  }
-}
-
-p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2rem;
-}
-
-button {
-  background-color: #009FB7;
-  border: none;
-  border-radius: 1%;
-  box-shadow: 5px 5px 5px hwb(240 90% 100%);
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-button:hover {
-  background-color: hwb(188 0% 40%);
-}
-
-address {
-  margin: 0;
-}
-address p {
-  margin: 0;
-  font-size: 1.1rem;
-}
-@media (min-width: 1300px) {
-  address p {
-    font-size: 1.5rem;
-  }
 }
 
 .paragraph-div {

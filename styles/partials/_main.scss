@@ -1,0 +1,12 @@
+main {
+    background-color: $mainColor;
+    box-shadow: 1px 1px 5px $shadowColor;
+    width: 100%;
+    @include flexColumn(center);
+    @media (min-width: $tablets) {
+        width: 70%;
+        min-width: 800px;
+        flex-grow: 1;
+    }
+
+}

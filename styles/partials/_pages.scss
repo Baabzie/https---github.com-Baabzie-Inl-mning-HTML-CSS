@@ -1,0 +1,326 @@
+.paragraph-div {
+    margin: 16px;
+    text-align: center;
+    @media (min-width: $tablets) {
+        width: 800px;
+    }
+    @media (min-width: $bigDesktop) {
+        width: 1200px;
+    }
+}
+
+.CTA-div {
+    @include standardCard();
+    h2 {
+        color: $textColor;
+        font-size: 2rem;
+        @media (min-width: $tablets) {
+            font-size: 3rem;
+        }
+    }
+    &:hover {
+        background-color: $secondaryHoverColor;
+    }
+}
+
+.CTA-link {
+    display: block;
+    text-decoration: none;
+}
+
+.CTA-picture {
+    width: 250px;
+
+    @media (min-width: $bigPhone) {
+        width: 500px;
+    }
+
+    @media (min-width: $tablets) {
+        width: 600px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 800px;
+    }
+
+    
+}
+
+
+.pair {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $bigPhone) {
+        flex-direction: row;
+    }
+    @media (min-width: $desktop) {
+        flex-direction: column;
+    }
+    @media (min-width: $bigDesktop) {
+        flex-direction: row;
+    }
+
+}
+
+
+
+.profile-div {
+    @include standardCard();
+    h3 {
+        @include standardCardHeaderOne();
+    }
+    h4 {
+        @include standardCardHeaderTwo();
+    }
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+}
+
+
+.profile-picture {
+    width: 250px;
+    @media (min-width: $desktop) {
+        width: 350px;
+    }
+}
+
+.profile-paragraph-div {
+    margin: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    
+    p {
+        padding: 0 10px 0 10px;
+        width: 230px;
+        @media (min-width: $bigPhone) {
+            height: 216px;
+        }
+        @media (min-width: $desktop) {
+            height: 144px;
+        }
+        @media (min-width: $desktop) {
+            padding: 0;
+            margin: 0 40px 0 40px;
+            width: 350px;
+        }
+    }
+    
+    address p {
+        @media (min-width: $bigPhone) {
+            height: auto;
+        }
+        @media (min-width: $desktop) {
+            height: auto;
+        }
+    }
+}
+
+.features-div {
+    margin: 16px 0 64px 0;
+    box-shadow: 10px 10px 5px $shadowColor;
+    border-radius: 1%;
+    @include flexColumn(center);
+    
+    
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+    @media (min-width: $tablets) {
+        flex-direction: row;
+    }
+}
+
+.features-picture {
+    width: 250px;
+    @media (min-width: $bigPhone) {
+        width: 350px;
+    }
+    @media (min-width: $tablets) {
+        width: 250px;
+    }
+    @media (min-width: $bigDesktop) {
+        width: 350px;
+    }
+}
+
+.product-div {
+    @include standardCard();
+    h2 {
+        @include standardCardHeaderOne();
+    }
+    h3 {
+        @include standardCardHeaderTwo();
+    }
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+}
+
+.product-picture {
+    width: 250px;
+    @media (min-width: $desktop) {
+        width: 350px;
+    }
+}
+
+.product-paragraph-div {
+    margin: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    
+    p {
+        padding: 0 10px 0 10px;
+        width: 230px;
+        @media (min-width: $bigPhone) {
+            height: 216px;
+        }
+        @media (min-width: $desktop) {
+            height: 144px;
+        }
+        @media (min-width: $desktop) {
+            padding: 0;
+            margin: 0 40px 0 40px;
+            width: 350px;
+        }
+    }
+}
+
+.review-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-layout {
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+
+}
+
+.review-div {
+    @include standardCard();
+    h2 {
+        color: $textColor;
+        font-size: 1rem;
+        width: 250px;
+        margin-bottom: 5px;
+    }
+    h3 {
+        color: $textColor;
+        margin: 0;
+        font-size: 1rem;
+        width: 250px;
+        margin-bottom: 5px;
+    }
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+
+}
+
+.review-paragraph-div {
+    margin: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+    
+    p {
+        padding: 0 10px 0 10px;
+        width: 230px;
+        @media (min-width: $bigPhone) {
+            width: 400px;
+        }
+        @media (min-width: $desktop) {
+            padding: 0;
+            margin: 0 40px 0 40px;
+            width: 230px;
+        }
+    }
+}
+
+.contact-div {
+    @include standardCard();
+    h2 {
+        @include standardCardHeaderOne();
+    }
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+    
+
+    form {
+        width: 250px;
+        @media (min-width: $bigPhone) {
+            width: 550px;
+        }
+    }
+    textarea {
+        width: 200px;
+        @media (min-width: $bigPhone) {
+            width: 500px;
+        }
+    }
+
+    input, select, textarea {
+        background-color: $bodyColor;
+        border-radius: 1%;
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    input, select {
+        text-align: center;
+        height: 25px;
+        @media (min-width: $bigPhone) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.office-div {
+    margin: 16px 0 64px 0;
+    box-shadow: 10px 10px 5px $shadowColor;
+    border-radius: 1%;
+    @include flexColumn(center);
+    
+    
+    @media (min-width: $normalPhone) {
+        margin: 16px 24px 64px 24px;
+    }
+    @media (min-width: $tablets) {
+        flex-direction: row;
+    }
+}
+
+.office-picture {
+    width: 250px;
+    @media (min-width: $bigPhone) {
+        width: 500px;
+    }
+    @media (min-width: $tablets) {
+        width: 600px;
+    }
+}
+
+.contact-paragraph-div {
+    margin: 16px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.row-reversed {
+    @media (min-width: $desktop) {
+        flex-direction: row-reverse;
+    }
+}

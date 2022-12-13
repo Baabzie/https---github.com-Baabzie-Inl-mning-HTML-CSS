@@ -1,0 +1,64 @@
+* {
+    font-family: 'Roboto',georgia,garamond,serif;
+}
+
+.column {
+    @include flexColumn(space-between);
+}
+
+body {
+    background-color: $bodyColor;
+    z-index: -2;
+    margin: 0;
+    min-height: 100vh;
+    @include flexColumn(space-between);
+}
+
+h1, h2 {
+    font-size: 1.3rem;
+    @media (min-width: $normalPhone) {
+        font-size: 1.7rem;
+    }
+    @media (min-width: $tablets) {
+        font-size: 2rem;
+    }
+    @media (min-width: $desktop) {
+        font-size: 2.8rem;
+    }
+    @media (min-width: $bigDesktop) {
+        font-size: 3.5rem;
+    }
+    
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 1%;
+    box-shadow: 5px 5px 5px $shadowColor;
+    color: $textColor;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    &:hover {
+        background-color: $buttonHoverColor;
+    }
+}
+
+address {
+    margin: 0;
+    p {
+        margin: 0;
+        font-size: 1.1rem;
+        @media (min-width: $desktop) {
+            font-size: 1.5rem;
+        }
+    }
+}
